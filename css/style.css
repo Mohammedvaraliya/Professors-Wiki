@@ -278,24 +278,24 @@ header.sticky{
 }
 
 
-.contact{
+.achievements{
 	background: var(--second-bg-color);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2.5rem;
 }
-.contact-text h4{
+.achievements-text h4{
 	color: var(--text-color);
 	margin: 18px 0;
 	font-size: 20px;
 	font-weight: 600;
 }
-.contact-text h2{
+.achievements-text h2{
 	font-size: var(--h2-font);
 	line-height: 1;
 }
-.contact-text p{
+.achievements-text p{
 	color: var(--second-color);
 	font-size: var(--p-font);
 	line-height: 1.8;
@@ -317,7 +317,7 @@ header.sticky{
 	color: var(--text-color);
 	transform: translateX(5px);
 }
-.contact-icons i{
+.achievements-icons i{
 	height: 45px;
 	width: 45px;
 	background: var(--main-color);
@@ -330,15 +330,15 @@ header.sticky{
 	margin-right: 15px;
 	transition: all .45s ease;
 }
-.contact-icons i:hover{
+.achievements-icons i:hover{
 	background: var(--text-color);
 	color: var(--main-color);
 }
 
-.contact-form form{
+.achievements-form form{
 	position: relative;
 }
-.contact-form form input,
+.achievements-form form input,
 form textarea{
 	width: 100%;
 	padding: 14px;
@@ -350,11 +350,11 @@ form textarea{
 	border-radius: 8px;
 	margin-bottom: 10px;
 }
-.contact-form textarea{
+.achievements-form textarea{
 	resize: none;
 	height: 240px;
 }
-.contact-form .submit{
+.achievements-form .submit{
 	display: inline-block;
 	font-size: 16px;
 	background: var(--main-color);
@@ -362,7 +362,7 @@ form textarea{
 	width: 160px;
 	transition: all .45s ease;
 }
-.contact-form .submit:hover{
+.achievements-form .submit:hover{
 	transform: scale(1.1);
 	cursor: pointer;
 }
@@ -434,7 +434,7 @@ form textarea{
 		height: auto;
 		max-width: 100%;
 	}
-	.contact{
+	.achievements{
 		grid-template-columns: 1fr;
 	}
 }

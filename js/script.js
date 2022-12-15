@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
-window.addEventListener ("scroll", function() {
-	header.classList.toggle ("sticky", window.scrollY > 100);
+window.addEventListener("scroll", function () {
+	header.classList.toggle("sticky", window.scrollY > 100);
 });
 
 let menu = document.querySelector('#menu-icon');
@@ -15,3 +15,13 @@ window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navlist.classList.remove('open');
 };
+
+var btns = header.getElementsByClassName("navbtn");
+
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function () {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+}
