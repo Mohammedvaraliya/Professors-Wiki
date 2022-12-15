@@ -16,7 +16,7 @@ window.onscroll = () => {
 	navlist.classList.remove('open');
 };
 
-var btns = header.getElementsByClassName("navbtn");
+let btns = header.getElementsByClassName("navbtn");
 
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
